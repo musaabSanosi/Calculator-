@@ -426,25 +426,19 @@ public static double round(double value, int places) {
     private void Button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button2ActionPerformed
         // TODO add your handling code here:
                 String old=Input1.getText();
-
                 Input1.setText(old+"2");
-
     }//GEN-LAST:event_Button2ActionPerformed
 
     private void DivButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DivButton2ActionPerformed
         // TODO add your handling code here:
                 String old=Input1.getText();
                 Input1.setText(old+"0");
-
-
     }//GEN-LAST:event_DivButton2ActionPerformed
 
     private void Button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button7ActionPerformed
         // TODO add your handling code here:
                 String old=Input1.getText();
-
                 Input1.setText(old+"7");
-
     }//GEN-LAST:event_Button7ActionPerformed
 
     private void Button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button4ActionPerformed
