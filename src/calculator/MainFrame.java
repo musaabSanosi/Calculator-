@@ -194,6 +194,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        mod.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         mod.setText("%");
         mod.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,6 +202,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        pow.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         pow.setText("^");
         pow.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -247,7 +249,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(pow, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(mod, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE))
+                    .addComponent(mod, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(19, 19, 19))
         );
         layout.setVerticalGroup(
@@ -374,11 +376,9 @@ public class MainFrame extends javax.swing.JFrame {
         
                 break;
             case '*':
-                result=result*operand;
-                
+                result=result*operand;     
                 break;
-            case '/':
-                
+            case '/':     
                 if(operand!=0)
                 result=result/operand;
                 else 
@@ -391,15 +391,12 @@ public class MainFrame extends javax.swing.JFrame {
                 break;
             case '^':
                 result=Math.pow(result,operand);
-                break;
-                
-                
+                break;       
         }
           result=round(result,2);
         if(result%1==0){
             int integer=(int) result;
             Input1.setText(integer+"");
-
         }else{
         Input1.setText(result+"");
         dotted=true;
@@ -407,7 +404,6 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_equButtonActionPerformed
 public static double round(double value, int places) {
     if (places < 0) throw new IllegalArgumentException();
-
     BigDecimal bd = new BigDecimal(value);
     bd = bd.setScale(places, RoundingMode.HALF_UP);
     return bd.doubleValue();
@@ -415,7 +411,6 @@ public static double round(double value, int places) {
     private void Button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button8ActionPerformed
         // TODO add your handling code here:
                 String old=Input1.getText();
-
                 Input1.setText(old+"8");
 
     }//GEN-LAST:event_Button8ActionPerformed
